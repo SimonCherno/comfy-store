@@ -75,7 +75,7 @@ export const FilterProvider = ({ children }) => {
     }}>{children}</FilterContext.Provider>
   )
 }
-// make sure use
+
 export const useFilterContext = () => {
   return useContext(FilterContext)
 }

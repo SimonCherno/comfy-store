@@ -57,7 +57,7 @@ export const CartProvider = ({ children }) => {
     }}>{children}</CartContext.Provider>
   )
 }
-// make sure use
+
 export const useCartContext = () => {
   return useContext(CartContext)
 }

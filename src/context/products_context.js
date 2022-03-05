@@ -47,8 +47,6 @@ export const ProductsProvider = ({ children }) => {
       console.log(error);
       console.log(products);
       dispatch({type:GET_PRODUCTS_ERROR})
-      // dispatch({type: GET_PRODUCTS_SUCCESS, payload: products});
-      
     }
   }
   
@@ -60,7 +58,6 @@ export const ProductsProvider = ({ children }) => {
     } catch (error) {
       console.log(error);
       console.log(product);
-      // dispatch({type:GET_SINGLE_PRODUCT_SUCCESS, payload: product});
       dispatch({type:GET_SINGLE_PRODUCT_ERROR})
     }
   }
@@ -79,7 +76,7 @@ export const ProductsProvider = ({ children }) => {
     </ProductsContext.Provider>
   )
 }
-// make sure use
+
 export const useProductsContext = () => {
   return useContext(ProductsContext)
 }
